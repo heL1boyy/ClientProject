@@ -5,10 +5,10 @@ import CenterNavigation from "./CenterNavigation";
 function TopNavigation() {
   return (
     <>
-      <div>
-        <nav className=" flex justify-between h-10 w-full bg-orange-200 px-8  items-center">
+      <div className=" bg-[#fbd597] ">
+        <nav className=" flex justify-between h-10 w-full container mx-auto   items-center">
           <div>
-            <p className="pl-[70px]">Welcome to Neupone Reasturant </p>
+            <p>Welcome to Neupone Reasturant </p>
           </div>
 
           <div>

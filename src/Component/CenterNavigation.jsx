@@ -5,8 +5,8 @@ import BottomNavigation from "./BottomNavigation";
 
 function CenterNavigation() {
   return (
-    <div className=" relative">
-      <nav className="px-8 flex justify-between w-full  pt-2 pb-2 h-[252px] bg-gray-500 ">
+    <div className=" relative bg-[#ffe6da]">
+      <nav className=" container mx-auto  flex justify-between w-full  pt-2 pb-2 h-[252px]  ">
         <div>
           <img src={Logo} alt="logo" />
         </div>
@@ -19,7 +19,7 @@ function CenterNavigation() {
           <p>chinese</p>
         </div>
       </nav>
-      <div className="  absolute top-[176px] w-full h-[70px]   bg-red-600 ">
+      <div className="  absolute top-[176px] w-full h-[70px]   bg-[#c1542d]">
         <BottomNavigation />
       </div>
     </div>

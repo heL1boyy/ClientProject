@@ -2,22 +2,20 @@ import React from "react";
 
 function BottomNavigation() {
   return (
-    <div>
-      <nav className="flex justify-between  w-full h-[70px] px-8 bg-slate-500  items-center">
-        <div className=" bg-slate-500 ">
-          <ul className="flex justify-evenly w-full gap-4 uppercase text-lg text-white">
-            <li>home</li>
-            <li>about us</li>
-            <li>our restaurant</li>
-            <li>gallery</li>
-            <li>contact</li>
+    <div className="container mx-auto">
+      <nav className="flex justify-between items-center w-full h-[70px] px-8 ">
+        <div className="flex items-center">
+          <ul className="flex ml-4 space-x-4 uppercase text-lg text-white">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Our Restaurants</li>
+            <li>Gallery</li>
+            <li>Contact</li>
           </ul>
         </div>
-        <div>
-          <button className="px-4 py-2 rounded-[20px] bg-yellow-500 text-center  uppercase">
-            tables reservation
-          </button>
-        </div>
+        <button className="px-4 py-2 rounded-[20px] bg-yellow-500 text-center uppercase">
+          Tables Reservation
+        </button>
       </nav>
     </div>
   );
