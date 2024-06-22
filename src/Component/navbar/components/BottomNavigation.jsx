@@ -1,12 +1,26 @@
 import React, { useState } from "react";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import { RxCross2 } from "react-icons/rx";
 
 function BottomNavigation() {
+  const listItem = [
+    { listName: "home", route: "/home" },
+    { listName: "about ", route: "/aboutus" },
+    { listName: "resturant ", route: "/resturant" },
+    { listName: "gallery", route: "/gallery" },
+    { listName: "contact", route: "/contact" },
+  ];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleItemClick = (index) => {
+    setActiveIndex(index);
+    setIsMenuOpen(false);
   };
   return (
     <div className="container mx-auto ">
@@ -17,43 +31,27 @@ function BottomNavigation() {
               isMenuOpen ? "block" : "hidden"
             } sm:flex`}
           >
-            <li className="active">
-              <Link to="/home" onClick={() => setIsMenuOpen(false)}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/aboutus"
-                onClick={() => setIsMenuOpen(false)}
-                className="self-center"
+            {listItem.map((listitems, index) => (
+              <li
+                className={`${activeIndex === index ? "text-[#fbdd47]" : ""}`}
+                key={index}
               >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/ourresturant"
-                onClick={() => setIsMenuOpen(false)}
-                className="text-wrap"
-              >
-                Restaurants
-              </Link>
-            </li>
-            <li>
-              <Link to="/gallery" onClick={() => setIsMenuOpen(false)}>
-                Gallery
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-                Contact
-              </Link>
-            </li>
+                <Link
+                  to={listitems.route}
+                  onClick={() => handleItemClick(index)}
+                >
+                  {listitems.listName}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
-        <button onClick={toggleMenu} className="sm:hidden">
-          <HiMiniBars3BottomRight size={24} />
+        <button onClick={toggleMenu} className="sm:hidden z-50">
+          {!isMenuOpen ? (
+            <HiMiniBars3BottomRight size={24} color="white" />
+          ) : (
+            <RxCross2 size={24} color="white" />
+          )}
         </button>
       </nav>
     </div>
