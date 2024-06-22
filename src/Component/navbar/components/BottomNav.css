@@ -1,0 +1,41 @@
+/* App.css */
+@media (min-width: 640px) {
+  .navbar ul {
+    max-height: none;
+  }
+}
+
+.navbar ul {
+  transition: max-height 0.3s ease-in-out;
+}
+
+.sm\:visible {
+  display: inline;
+}
+
+.hidden {
+  display: none;
+}
+
+.sm\:hidden {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .sm\:hidden {
+    display: inline;
+  }
+}
+
+.navbar button {
+  margin-right: 1rem; /* Adjust as necessary */
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar {
+  position: relative;
+  z-index: 50;
+}
