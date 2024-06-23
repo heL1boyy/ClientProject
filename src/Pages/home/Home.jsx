@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "./components/Hero";
 import Welcome from "./components/Welcome";
 import Restruant from "./components/Restruant";
-import MenuSection from "./components/MenuSection";
+import MenuSection from "./components/menu/MenuSection";
 import TodaysSpeical from "./components/TodaysSpeical";
 import Youtude from "./components/Youtude";
 

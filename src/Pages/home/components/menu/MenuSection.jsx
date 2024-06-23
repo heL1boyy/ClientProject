@@ -1,7 +1,9 @@
 import React from "react";
-import WhiteShape from "../../../assetes/white_shape_4.png";
-import WhiteShape1 from "../../../assetes/white_shape_3.png";
-import WhiteShape2 from "../../../assetes/white_shape_2.png";
+import WhiteShape from "../../../../assetes/white_shape_4.png";
+import WhiteShape1 from "../../../../assetes/white_shape_3.png";
+import WhiteShape2 from "../../../../assetes/white_shape_2.png";
+import { Link } from "react-router-dom";
+// import Snacks from "./component/Snacks";
 
 const blogPosts = [
   {
@@ -46,28 +48,28 @@ function MenuSection() {
               SeaFood Curry
             </button>
             <button className="bg-[#c1542d] text-white py-2 px-4 rounded">
-              Dinner Menu
-            </button>
-            <button className="bg-[#c1542d] text-white py-2 px-4 rounded">
-              Party Menu
-            </button>
-            <button className="bg-[#c1542d] text-white py-2 px-4 rounded">
               Drink Menu
             </button>
-            <button className="bg-[#c1542d] text-white py-2 px-4 rounded">
-              Snack Menu
+            <button className="bg-[#c1542d] text-white py-2 px-4 rounded ">
+              <Link to="/snacks"> Snacks Menu</Link>
             </button>
             <button className="bg-[#c1542d] text-white py-2 px-4 rounded">
-              Snack Menu
+              Salad Soup
             </button>
             <button className="bg-[#c1542d] text-white py-2 px-4 rounded">
-              Snack Menu
+              Vetegable Curry
             </button>
             <button className="bg-[#c1542d] text-white py-2 px-4 rounded">
-              Snack Menu
+              BBQ
             </button>
             <button className="bg-[#c1542d] text-white py-2 px-4 rounded">
-              Snack Menu
+              Mutton Curry
+            </button>
+            <button className="bg-[#c1542d] text-white py-2 px-4 rounded">
+              Chicken Curry
+            </button>
+            <button className="bg-[#c1542d] text-white py-2 px-4 rounded">
+              Nan Curry
             </button>
           </div>
 

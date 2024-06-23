@@ -1,7 +1,15 @@
 import React from "react";
 
+import UpperPartAbout from "./components/UpperPartAbout";
+import BottomPartAbout from "./components/BottomPartAbout";
+
 function AboutUs() {
-  return <div>AboutUs</div>;
+  return (
+    <section>
+      <UpperPartAbout />
+      <BottomPartAbout />
+    </section>
+  );
 }
 
 export default AboutUs;
