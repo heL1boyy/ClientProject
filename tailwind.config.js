@@ -24,6 +24,7 @@ module.exports = {
         "auto-fit-minmax": "repeat(auto-fit, minmax(240px, 1fr))",
         "menu-auto-fit": "repeat(auto-fit,minmax(250px,1fr))",
         "contact-auto-fit": "repeat(auto-fit,minmax(300px,1fr))",
+        "resturant-auto-fit": "repeat(auto-fit,minmax(340px,1fr))",
       },
     },
     backgroundImage: {
