@@ -67,7 +67,7 @@ const NamasteDinning = () => {
   ];
   return (
     <section className="container mx-auto">
-      <div className="flex flex-col">
+      <div className="flex flex-col items-center">
         {/* header  */}
 
         <div className="mt-10 self-center font-bold">
@@ -81,17 +81,17 @@ const NamasteDinning = () => {
         </div>
 
         {/* buttons  */}
-        <div className="mt-5 self-center flex flex-col sm:flex-row gap-2">
-          <button className=" bg-[#f9795f] text-white  uppercase px-3 py-2.5 rounded-[4px] hover:bg-[#fbdd47]  outline hover:outline-[#f9795f] hover:outline-4">
+        <div className="mt-5   flex flex-col sm:flex-row gap-2">
+          <button className=" bg-[#f9795f] text-white w-full  box-border uppercase px-3 py-2.5 rounded-[4px] hover:bg-[#fbdd47]  outline hover:outline-[#f9795f] hover:outline-4">
             <Link>ONLINE RESERVATION(TABLELOG)</Link>
           </button>
-          <button className=" bg-[#f9795f] text-white  uppercase px-3 py-2.5 rounded-[4px] hover:bg-[#fbdd47]  outline hover:outline-[#f9795f] hover:outline-4">
+          <button className=" bg-[#f9795f] text-white w-full  box-border uppercase px-3 py-2.5 rounded-[4px] hover:bg-[#fbdd47]  outline hover:outline-[#f9795f] hover:outline-4">
             <Link>ONLINE RESERVATION(TABLELOG)</Link>
           </button>
-          <button className=" bg-[#f9795f] text-white  uppercase px-3 py-2.5 rounded-[4px] hover:bg-[#fbdd47]  outline hover:outline-[#f9795f] hover:outline-4">
+          <button className=" bg-[#f9795f] text-white w-full  box-border  uppercase px-3 py-2.5 rounded-[4px] hover:bg-[#fbdd47]  outline hover:outline-[#f9795f] hover:outline-4">
             <Link>ONLINE RESERVATION(TABLELOG)</Link>
           </button>
-          <button className=" bg-[#f9795f] text-white  uppercase px-3 py-2.5 rounded-[6px] hover:bg-[#fbdd47]  outline hover:outline-[#f9795f] hover:outline -4">
+          <button className=" bg-[#f9795f] text-white w-full box-border uppercase px-3 py-2.5 rounded-[6px] hover:bg-[#fbdd47]  outline hover:outline-[#f9795f] hover:outline -4">
             <Link>ONLINE RESERVATION(TABLELOG)</Link>
           </button>
         </div>
