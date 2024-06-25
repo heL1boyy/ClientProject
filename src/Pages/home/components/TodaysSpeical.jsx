@@ -9,7 +9,7 @@ function TodaysSpeical() {
           Today's Special
         </h2>
         <div className="flex justify-center mt-8 gap-5 ">
-          <div className="bg-[#ececec] p-4 flex flex-col sm:flex-row  items-center sm:justify-evenly w-full ">
+          <div className="bg-[#ececec] p-4 flex flex-col lg:flex-row  items-center sm:justify-evenly w-full ">
             <img src={img} alt="Special 1" />
             <div className="flex flex-col text-4xl text-center ">
               <h1>Butter Naan</h1>
@@ -18,7 +18,7 @@ function TodaysSpeical() {
               </p>
             </div>
           </div>
-          <div className=" bg-[#ececec] p-4 flex flex-col sm:flex-row   items-center w-full sm:justify-evenly">
+          <div className=" bg-[#ececec] p-4 flex flex-col lg:flex-row   items-center w-full sm:justify-evenly">
             <img src={img} alt="Special 2" />
             <div className="flex flex-col text-center ">
               <h1 className="text-4xl ">Butter Naan</h1>

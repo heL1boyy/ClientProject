@@ -22,7 +22,7 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         "auto-fit-minmax": "repeat(auto-fit, minmax(240px, 1fr))",
-        "menu-auto-fit": "repeat(auto-fit,minmax(200px,1fr))",
+        "menu-auto-fit": "repeat(auto-fit,minmax(250px,1fr))",
         "contact-auto-fit": "repeat(auto-fit,minmax(300px,1fr))",
       },
     },

@@ -1,13 +1,15 @@
 import { snacks } from "../../../../../data/dummydata";
 
-const Snacks = () => {
+const Snacks = ({ viewAll }) => {
+  const imagesToDisplay = viewAll ? snacks : snacks.slice(0, 4);
+
   return (
     <div className="grid gap-5 grid-cols-menu-auto-fit">
-      {snacks.map((snack) => (
-        <div className=" p-4 rounded-lg ">
+      {imagesToDisplay.map((snack, index) => (
+        <div key={index} className="p-2 rounded-lg aspect-[4/3]">
           <img
             src={snack.img}
-            alt="Blog Post One"
+            alt={`Snack ${index + 1}`}
             className="w-full h-full object-cover rounded-lg"
           />
         </div>

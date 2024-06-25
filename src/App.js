@@ -9,9 +9,10 @@ import Contact from "./Pages/contact/Contact";
 import Footer from "./Component/footer/Footer";
 import "./index.css";
 import Navbar from "./Component/navbar/Navbar";
-import Snacks from "./Pages/home/components/menu/component/Snacks";
+
 import NamasteKitchen from "./Pages/resturant/NamasteKitchen";
 import NamasteDinning from "./Pages/resturant/NamasteDinning";
+import MenuSection from "./Pages/home/components/menu/MenuSection";
 function App() {
   return (
     <BrowserRouter>
@@ -26,8 +27,8 @@ function App() {
           path="/namastekitchenmiwihashimoto"
           element={<NamasteDinning />}
         />
+        <Route path="/menu" element={<MenuSection />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/snacks" element={<Snacks />} />
       </Routes>
       <Footer />
     </BrowserRouter>
