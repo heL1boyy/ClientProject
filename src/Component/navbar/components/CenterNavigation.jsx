@@ -2,12 +2,16 @@ import React from "react";
 import Logo from "../../../assetes/logo.png";
 import BottomNavigation from "./BottomNavigation";
 
+import shape1 from "../../../assets/images/shape1.png";
+import shape2 from "../../../assets/images/shape2.png";
+import shape3 from "../../../assets/images/shape3.png";
+
 function CenterNavigation() {
   return (
     <>
       <div className="bg-[#ffe6da]">
-        <section className="container mx-auto py-4">
-          <nav className="flex flex-col sm:flex-row items-center sm:justify-between">
+        <section className="container mx-auto py-1">
+          <nav className="flex flex-col sm:flex-row items-center sm:justify-between relative ">
             <div>
               <img src={Logo} alt="logo" className="max-w-[200px]" />
             </div>
@@ -19,6 +23,14 @@ function CenterNavigation() {
               <span>(We will refrain from serving alcoholic beverages.)</span>
             </div>
           </nav>
+
+          {/* <img
+            src={shape1}
+            alt=""
+            className="absolute top-12 left-40  size-10 "
+          />
+          <img src={shape2} alt="" className="absolute" />
+          <img src={shape3} alt="" className="absolute" /> */}
         </section>
       </div>
 

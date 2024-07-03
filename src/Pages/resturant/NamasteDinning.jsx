@@ -67,10 +67,10 @@ const NamasteDinning = () => {
   ];
   return (
     <section className="container mx-auto">
-      <div className="flex flex-col items-center">
+      <div className="mt-10  ">
         {/* header  */}
 
-        <div className="mt-10 self-center font-bold">
+        <div className="self-center font-bold">
           <h1 className="text-3xl text-center">
             Namaste Kitchen Miwi Hashimoto
           </h1>
@@ -81,19 +81,19 @@ const NamasteDinning = () => {
         </div>
 
         {/* buttons  */}
-        <div className="mt-5   flex flex-col sm:flex-row gap-2">
-          <button className=" bg-[#f9795f] text-white w-full  box-border uppercase px-3 py-2.5 rounded-[4px] hover:bg-[#fbdd47]  outline hover:outline-[#f9795f] hover:outline-4">
-            <Link>ONLINE RESERVATION(TABLELOG)</Link>
-          </button>
-          <button className=" bg-[#f9795f] text-white w-full  box-border uppercase px-3 py-2.5 rounded-[4px] hover:bg-[#fbdd47]  outline hover:outline-[#f9795f] hover:outline-4">
-            <Link>ONLINE RESERVATION(TABLELOG)</Link>
-          </button>
-          <button className=" bg-[#f9795f] text-white w-full  box-border  uppercase px-3 py-2.5 rounded-[4px] hover:bg-[#fbdd47]  outline hover:outline-[#f9795f] hover:outline-4">
-            <Link>ONLINE RESERVATION(TABLELOG)</Link>
-          </button>
-          <button className=" bg-[#f9795f] text-white w-full box-border uppercase px-3 py-2.5 rounded-[6px] hover:bg-[#fbdd47]  outline hover:outline-[#f9795f] hover:outline -4">
-            <Link>ONLINE RESERVATION(TABLELOG)</Link>
-          </button>
+        <div className="mt-5 flex  justify-center flex-row  gap-2 border-2 border-orange-700 max-w-full ">
+          <Link className="bg-primary text-white  text-wrap uppercase px-3 py-2.5 rounded-[4px] hover:bg-[#fbdd47] outline-none hover:outline-[#f9795f] hover:outline-4">
+            ONLINE RESERVATION(TABLELOG)
+          </Link>
+          <Link className="bg-[#f9795f] text-white block uppercase px-3 py-2.5 rounded-[4px] hover:bg-[#fbdd47] outline-none hover:outline-[#f9795f] hover:outline-4">
+            ONLINE RESERVATION(TABLELOG)
+          </Link>
+          <Link className="bg-[#f9795f] text-white  block  uppercase px-3 py-2.5 rounded-[4px] hover:bg-[#fbdd47] outline-none hover:outline-[#f9795f] hover:outline-4">
+            ONLINE RESERVATION(TABLELOG)
+          </Link>
+          <Link className="bg-[#f9795f] text-white  block uppercase px-3 py-2.5 rounded-[4px] hover:bg-[#fbdd47] outline-none hover:outline-[#f9795f] hover:outline-4">
+            ONLINE RESERVATION(TABLELOG)
+          </Link>
         </div>
 
         {/* table list */}

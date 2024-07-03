@@ -26,6 +26,14 @@ module.exports = {
         "contact-auto-fit": "repeat(auto-fit,minmax(300px,1fr))",
         "resturant-auto-fit": "repeat(auto-fit,minmax(340px,1fr))",
       },
+      colors: {
+        primary: "#f9795f",
+        red: "#c1542d",
+        "dark-red": "#9d1f1a",
+        pink: "#fa92cb",
+        green: "#176266",
+        yellow: "#fbdd47",
+      },
     },
     backgroundImage: {
       "hero-pattern": "url('./assetes/01.png')",
