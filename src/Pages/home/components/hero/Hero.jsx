@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "../../../assetes/bg92.png";
+import heroImage from "../../../../assetes/bg92.png";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -62,11 +62,11 @@ function Hero() {
       </Slider>
 
       <motion.div
-        initial={{ x: -100, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ y: -100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{
           delay: 0.2,
-          x: { type: "spring", stiffness: 60 },
+          y: { type: "spring", stiffness: 60 },
           opacity: { duration: 1 },
           ease: "easeIn",
           duration: 1,

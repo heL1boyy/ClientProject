@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "./components/Hero";
+import Hero from "./components/hero/Hero";
 import Welcome from "./components/Welcome";
 import Restruant from "./components/Restruant";
 import MenuSection from "./components/menu/MenuSection";
