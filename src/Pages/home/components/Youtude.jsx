@@ -12,10 +12,10 @@ const Youtude = () => {
           <div className=" h-[256px]">
             <iframe
               src="https://www.youtube.com/embed/fSM8d0Lxn-s"
-              frameborder="0"
+              frameBorder="0"
               title="cookingvideo"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
               className="w-full h-full"
             ></iframe>
           </div>

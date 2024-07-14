@@ -1,0 +1,24 @@
+/* CustomArrows.css */
+.custom-arrow {
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.custom-next {
+  right: 10px;
+}
+
+.custom-prev {
+  left: 10px;
+}
+.custom-arrow::before {
+  font-size: 30px; /* Adjust the size of the arrow icon if needed */
+  color: white; /* Change the arrow icon color if needed */
+}

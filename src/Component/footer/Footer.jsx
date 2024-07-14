@@ -44,7 +44,7 @@ function Footer() {
               <div>
                 <ul className="ml-8 mt-3">
                   {listitems.map((listitem, index) => (
-                    <li className="m-3">
+                    <li key={index} className="m-3">
                       <a
                         href="#home"
                         className="w-max inline-block text-black transform transition-transform duration-[600ms] ease-in-out hover:translate-x-3 hover:scale-110  hover:font-semibold"

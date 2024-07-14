@@ -1,15 +1,33 @@
 import React from "react";
 import TO from "../../../assetes/to1.png";
 import TOs from "../../../assetes/to1_copy.png";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 // import bg from "../assetes/01.png";
 
 function Welcome() {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Trigger animation only once
+    threshold: 0.5, // Trigger animation when 50% of the component is in view
+  });
+
   return (
     <div className="bg-hero-pattern bg-cover px-12 py-24">
-      <section className=" container mx-auto    ">
+      <section ref={ref} className=" container mx-auto    ">
         {/* iamge_section  */}
         <div className="grid gap-10 grid-cols-auto-fit-minmax  ">
-          <div className="relative ">
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="relative "
+          >
             {/* img1 */}
             <div className=" absolute left-5 w-[70%] h-4/5">
               <img
@@ -27,9 +45,20 @@ function Welcome() {
                 className=" w-full h-full object-cover"
               />
             </div>
-          </div>
+          </motion.div>
           {/* details part */}
-          <div className=" flex justify-center items-center m-2 w-full h-full">
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 0.2 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className=" flex justify-center items-center m-2 w-full h-full"
+          >
             <div className="mx-10">
               <div className="  text-center mb-6 h-max">
                 <h1 className="   text-[50px]   italic font-bold pt-[100px]">
@@ -49,7 +78,7 @@ function Welcome() {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </div>
