@@ -12,10 +12,10 @@ function Welcome() {
   });
 
   return (
-    <div className="bg-hero-pattern bg-cover px-12 py-24">
+    <div className="bg-hero-pattern bg-cover md:px-12 py-24">
       <section ref={ref} className=" container mx-auto    ">
         {/* iamge_section  */}
-        <div className="grid gap-10 grid-cols-auto-fit-minmax  ">
+        <div className="grid gap-10  md:grid-cols-auto-fit-minmax  ">
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: inView ? 0 : -100, opacity: inView ? 1 : 0 }}
@@ -57,11 +57,11 @@ function Welcome() {
               ease: "easeIn",
               duration: 1,
             }}
-            className=" flex justify-center items-center m-2 w-full h-full"
+            className=" flex justify-center items-center lg:m-2 w-full h-full"
           >
             <div className="mx-10">
               <div className="  text-center mb-6 h-max">
-                <h1 className="   text-[50px]   italic font-bold pt-[100px]">
+                <h1 className="   text-[50px]   italic font-bold lg:pt-[100px]">
                   Welcome to
                 </h1>
 

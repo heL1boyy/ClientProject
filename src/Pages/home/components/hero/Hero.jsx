@@ -42,7 +42,7 @@ function Hero() {
   };
 
   return (
-    <div className="relative  ">
+    <div className="relative">
       <Slider {...settings}>
         <img
           src={heroImage}
@@ -63,7 +63,7 @@ function Hero() {
 
       <motion.div
         initial={{ y: -100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{
           delay: 0.2,
           y: { type: "spring", stiffness: 60 },
